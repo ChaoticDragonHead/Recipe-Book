@@ -1,3 +1,33 @@
 body{
     background-color: lime;
 }
+
+#menu{
+    background-color: purple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 5px solid;
+}
+
+.mouseBut{
+    background-color: yellow;
+    padding: 5px;
+
+    border: 2px;
+    border-bottom: 4px;
+    border-top: 4px;
+    border-color: aqua;
+    border-style: solid;
+}
+
+.mouseBut:hover{
+    background-color: burlywood;
+    box-shadow: 5px 5px 2px black;
+
+    padding: 10px;
+    border: 0px;
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
