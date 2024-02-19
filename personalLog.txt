@@ -1,3 +1,5 @@
 This will be my personal log of how the changes are going. 
 
 Project status is a front page with some text elements and basic stylization, but no fuctionality and not very visually appealing. Project has not been worked for very long, so it is promising. Date: 2.16.24
+
+Date: 2.18.24: Today I altered the menu bar a bit. I need to set it inside a DIV but for now it's in a free floating UL fo simple stylization.
