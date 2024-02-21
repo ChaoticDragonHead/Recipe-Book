@@ -1,49 +1,48 @@
-body{
-    background-color: lime;
+/*CSS Vars*/
+:root{
+    --transition: 0.5s ease-in;
+    --prmColor: #f2a455;
+    --secColor: #090b36;
 }
 
-ul li {
-    transition: padding .5s;
-    list-style-type: none;
-    padding: 10px 25px 5px 25px;
+html{
+    scroll-behavior: smooth;
+}
 
-    border-bottom: 5px solid black;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-
-    background-color: black;
+/* Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: var(--transition);
   }
 
-ul li:hover {
-    padding-bottom: 75px;
-    transition: padding .5s;
+ul li {
+    list-style-type: none;
 }
 
-#menu{
-    width: max-content;
+nav {
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     position: sticky;
     top: 0;
     left: 0;
     z-index: 1;
+  }
 
-    border-bottom: 5px solid black;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    background-color: black;
-
-    font-family: fantasy;
-    font-size: 2rem;
-    font-weight: 500;
-    color: #ffff;
-
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    
+  #menu{
     display: flex;
-    align-items: stretch;
-    justify-content: center;
+    align-items: center;
 
-    height: 45px;
-}
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: var(--prmColor);
+    background-color: var(--secColor);
+  }
+
+  .navItem:hover{
+    color: var(--secColor);
+    background-color: var(--prmColor);
+  }
